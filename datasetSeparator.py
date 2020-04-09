@@ -27,3 +27,17 @@ for filename in os.listdir(trainDir):
   chance = random.randint(1, 101)
   if chance <= 15:
     os.rename(os.path.join(trainDir, filename), os.path.join(validationDir, filename))
+
+
+# add file name to files
+# for filename in os.listdir(trainDir):
+#   newFileName = video + '_' + filename
+#   os.rename(os.path.join(trainDir, filename), os.path.join(trainDir, newFileName))
+
+# for filename in os.listdir(testDir):
+#   newFileName = video + '_' + filename
+#   os.rename(os.path.join(testDir, filename), os.path.join(testDir, newFileName))
+
+# for filename in os.listdir(validationDir):
+#   newFileName = video + '_' + filename
+#   os.rename(os.path.join(validationDir, filename), os.path.join(validationDir, newFileName))
